@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class NizBrojeva {
 	public static int minNum(int[] a) {
+		// sorts the array
 		Arrays.sort(a);
 		int min = a[0];
+		// returns min number
 		return min;
 	}
 
