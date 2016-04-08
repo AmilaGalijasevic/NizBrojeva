@@ -19,8 +19,13 @@ public class NizBrojeva {
 	}
 
 	public static int sum(int[] a) {
+		int suma = 0;
 
-		return 0;
+		for (int i = 0; i < a.length; i++) {
+			suma = suma + a[i];
+		}
+
+		return suma;
 	}
 
 	public static int average(int[] a) {
