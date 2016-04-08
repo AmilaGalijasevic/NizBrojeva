@@ -20,11 +20,9 @@ public class NizBrojeva {
 
 	public static int sum(int[] a) {
 		int suma = 0;
-
 		for (int i = 0; i < a.length; i++) {
 			suma = suma + a[i];
 		}
-
 		return suma;
 	}
 
@@ -60,6 +58,8 @@ public class NizBrojeva {
 		}
 		System.out.println(minNum(array));
 		System.out.println(maxNum(array));
+		System.out.println(sum(array));
+		System.out.println(average(array));
 	}
 
 }
