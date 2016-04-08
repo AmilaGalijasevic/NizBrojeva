@@ -12,6 +12,7 @@ public class NizBrojeva {
 	}
 
 	public static int maxNum(int[] a) {
+		//comment bla bla 
 		Arrays.sort(a);
 		int max = a[9];
 		return max;
