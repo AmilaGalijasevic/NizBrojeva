@@ -12,7 +12,7 @@ public class NizBrojeva {
 	}
 
 	public static int maxNum(int[] a) {
-		//comment bla bla 
+		// comment bla bla
 		Arrays.sort(a);
 		int max = a[9];
 		return max;
@@ -24,8 +24,15 @@ public class NizBrojeva {
 	}
 
 	public static int average(int[] a) {
+		int sum = 0;
+		int average;
 
-		return 0;
+		for (int i = 0; i < a.length; i++) {
+			sum = sum + a[i];
+		}
+		average = (sum / a.length);
+		return average;
+
 	}
 
 	public static int unique(int[] a) {
