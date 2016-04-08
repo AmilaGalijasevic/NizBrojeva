@@ -20,24 +20,20 @@ public class NizBrojeva {
 
 	public static int sum(int[] a) {
 		int suma = 0;
-
 		for (int i = 0; i < a.length; i++) {
 			suma = suma + a[i];
 		}
-
 		return suma;
 	}
 
 	public static int average(int[] a) {
 		int sum = 0;
 		int average;
-
 		for (int i = 0; i < a.length; i++) {
 			sum = sum + a[i];
 		}
 		average = (sum / a.length);
 		return average;
-
 	}
 
 	public static int unique(int[] a) {
@@ -60,6 +56,8 @@ public class NizBrojeva {
 		}
 		System.out.println(minNum(array));
 		System.out.println(maxNum(array));
+		System.out.println(sum(array));
+		System.out.println(average(array));
 	}
 
 }
