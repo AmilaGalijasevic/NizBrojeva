@@ -45,7 +45,7 @@ public class NizBrojeva {
 		int count = 0;
 
 		for (int i = 0; i < niz.length - 1; i++) {
-				// ako su komsije iste zabiljezimo u count i poredimo slijedece
+				// ako su komsije iste zabiljezimo u count++ i poredimo slijedece
 				// komsije
 				if (niz[i] == niz[i+1]) {
 					count++;
