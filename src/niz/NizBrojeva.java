@@ -1,6 +1,9 @@
 package niz;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class NizBrojeva {
 	public static int minNum(int[] a) {
@@ -36,14 +39,37 @@ public class NizBrojeva {
 		return average;
 	}
 
-	public static int unique(int[] a) {
-		// mijenjajte sebi metode kako vam odgovara
-		return 0;
+	// Unikatni brojevi
+	public static ArrayList<Integer> unique(int[] niz) {
+		ArrayList<Integer> unikatni = new ArrayList<Integer>();
+		int count = 0;
+
+		for (int i = 0; i < niz.length - 1; i++) {
+				// ako su komsije iste zabiljezimo u count i poredimo slijedece
+				// komsije
+				if (niz[i] == niz[i+1]) {
+					count++;
+				} else {
+					if(count == 0){
+					unikatni.add(niz[i]);
+					}else {
+					count=0;
+					}
+				}
+		}
+		
+		//Provjera za zadnji clan u nizu
+		if(niz[niz.length - 2] != niz[niz.length - 1]){
+			unikatni.add(niz[niz.length - 1]);
+		}
+
+		return unikatni;
 	}
-
-	public static int sorting(int[] a) {
-
-		return 0;
+	//Sortirani niz od najmanjeg ka najvecem
+	public static int [] sorting(int[] a) {
+		int[] niz=a;
+		Arrays.sort(niz);
+		return niz;
 	}
 
 	public static void main(String[] args) {
@@ -58,6 +84,12 @@ public class NizBrojeva {
 		System.out.println(maxNum(array));
 		System.out.println(sum(array));
 		System.out.println(average(array));
+		System.out.println(unique(array));
+		array=sorting(array);
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]+", ");
+		}
+		
 	}
 
 }
